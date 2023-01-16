@@ -22,3 +22,7 @@ readStream.on("end", () => {
   console.log("finished reading file");
   console.log(`In total I read ${fileTxt.length - 1} characters of text`);
 });
+
+/* 
+  ?? I think that writing in stream allows write to be done in batches while fs.write does it right away every line. 
+*/
