@@ -17,15 +17,8 @@ const cp = require("child_process");
 
 */
 
-// cp.exec("node readStream", (err, data, stderr) => {
-//   console.log(data);
-// });
 
-
-cp.exec("ls", (err, data) => {
-  if (err){
-    throw err;
-  }
-
-  console.log(data)
-})
+// we can also use exec to run a process that created, in this case readStream
+cp.exec("node readStream", (err, data, stderr) => {
+  console.log(data);
+});
